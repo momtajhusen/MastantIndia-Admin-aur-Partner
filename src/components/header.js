@@ -22,7 +22,7 @@ const CustomeHeader = ({ title }) => {
       {/* Profile + Title */}
       {/* <View style={{ flexDirection: "row", alignItems: "center", gap: 10 }}> */}
         {/* Profile Image */}
-        <TouchableOpacity onPress={() => navigation.navigate("AdminProfile")}>
+        <TouchableOpacity onPress={() => navigation.navigate('AdminProfile')}>
           <Image
             source={{ uri: "https://i.pravatar.cc/150?img=47" }}
             style={{ width: 34, height: 34, borderRadius: 17 }}
@@ -36,7 +36,7 @@ const CustomeHeader = ({ title }) => {
       {/* </View> */}
 
       {/* Notification Button */}
-      <TouchableOpacity onPress={() => navigation.navigate("NotificationScreen")}>
+      <TouchableOpacity onPress={() => navigation.navigate('NotificationHistory')}>
         <Ionicons name="notifications-outline" size={26} color="black" />
       </TouchableOpacity>
     </View>

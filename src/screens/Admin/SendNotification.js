@@ -4,7 +4,7 @@ import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-nativ
 import CustomeHeader from '../../components/header';
 
 // create a component
-const Notification = () => {
+const SendNotification = () => {
     const [message, setMessage] = useState('');
 
     return (
@@ -98,4 +98,4 @@ const styles = StyleSheet.create({
 });
 
 //make this component available to the app
-export default Notification;
+export default SendNotification;

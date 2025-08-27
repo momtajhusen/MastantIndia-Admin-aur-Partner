@@ -9,7 +9,8 @@ import BookingDetails from '../screens/Admin/BookingDetails';
 import AdminProfile from '../screens/Admin/AdminProfile';
 import Payments from '../screens/Admin/payments';
 import RatingsReviews from '../screens/Admin/RatingsReviews';
-import Notification from '../screens/Admin/Notification';
+import SendNotification from '../screens/Admin/SendNotification';
+import NotificationHistory from '../screens/Admin/NotificationHistory';
 import RolesPermissions from '../screens/Admin/RolesPermissions';
 import LocationSetup from '../screens/Admin/LocationSetup';
 import Settings from '../screens/Admin/Settings';
@@ -32,10 +33,12 @@ const AdminStackNavigation = () => {
         <Stack.Screen name="AdminProfile" component={AdminProfile} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="Payments" component={Payments} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="RatingsReviews" component={RatingsReviews} options={{ headerShown: false, animation: 'fade' }} />
-        <Stack.Screen name="Notification" component={Notification} options={{ headerShown: false, animation: 'fade' }} />
+        <Stack.Screen name="SendNotification" component={SendNotification} options={{ headerShown: false, animation: 'fade' }} />
+        <Stack.Screen name="NotificationHistory" component={NotificationHistory} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="RolesPermissions" component={RolesPermissions} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="LocationSetup" component={LocationSetup} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="Settings" component={Settings} options={{ headerShown: false, animation: 'fade' }} />
+        
 
 
 

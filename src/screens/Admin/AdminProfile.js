@@ -24,7 +24,7 @@ const AdminProfile = ({ navigation }) => {
       navigation.navigate("RatingsReviews");
     } 
     if (item.title === "Notification") {
-      navigation.navigate("Notification");
+      navigation.navigate("SendNotification");
     } 
     if (item.title === "Roles & Permissions") {
       navigation.navigate("RolesPermissions");
@@ -45,7 +45,7 @@ const AdminProfile = ({ navigation }) => {
       {/* Profile Section */}
       <View style={styles.profileSection}>
         <Image
-          source={{ uri: "https://i.pravatar.cc/150?img=47" }} // dummy profile image
+          source={{ uri: "https://i.pravatar.cc/150?img=47" }}
           style={styles.profileImage}
         />
         <Text style={styles.name}>Admin Name</Text>
