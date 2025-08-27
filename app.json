@@ -2,6 +2,23 @@
   "expo": {
     "name": "MastantIndiaAdmin",
     "slug": "MastantIndiaAdmin",
-    "version": "1.0.0"
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/images/Applogo.png",
+    "runtimeVersion": "1.0.0",
+    "android": {},
+    "ios": {},
+    "extra": {
+      "eas": {
+        "projectId": "661ab987-825e-4ed3-bdd6-b47548dce11e"
+      }
+    },
+    "owner": "codeprou",
+    "updates": {
+      "url": "https://u.expo.dev/661ab987-825e-4ed3-bdd6-b47548dce11e"
+    },
+    "plugins": [
+      "expo-maps"
+    ]
   }
 }
