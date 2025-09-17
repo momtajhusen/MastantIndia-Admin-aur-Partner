@@ -4,6 +4,7 @@ import AdminStackNavigation from './src/navigation/AdminStackNavigation';
 import { MenuProvider } from 'react-native-popup-menu';
 import { StatusBar } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { AlertProvider } from './src/components/AlertProvider';
 
 const App = () => {
   return (
@@ -11,13 +12,15 @@ const App = () => {
       {/* ✅ Global StatusBar */}
       <StatusBar backgroundColor="#fff" barStyle="dark-content" />
 
+    <AlertProvider>
       <MenuProvider>
         <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
           <NavigationContainer>
             <AdminStackNavigation />
           </NavigationContainer>
         </SafeAreaView>
-      </MenuProvider>
+       </MenuProvider>
+      </AlertProvider>
     </SafeAreaProvider>
   );
 };

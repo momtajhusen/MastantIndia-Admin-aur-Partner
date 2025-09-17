@@ -1,8 +1,10 @@
 //import liraries
 import React, { useContext } from 'react';
-import SplashScreen from '../screens/SplashScreen';
+import SplashScreen from '../screens/Common/SplashScreen';
 import AdminBottomTabNavigator from './AdminBottomTabNavigator';
-import LoginScreen from '../screens/Admin/LoginScreen';
+import WorkerBottomTabNavigator from './WorkerBottomTabNavigator';
+import LoginScreen from '../screens/Common/LoginScreen';
+import OtpVerificationScreen from '../screens/Common/OTPVerificationScreen';
 import ProviderDetails from '../screens/Admin/ProviderDetails';
 import ServiceDetails from '../screens/Admin/ServiceDetails';
 import BookingDetails from '../screens/Admin/BookingDetails';
@@ -14,6 +16,9 @@ import NotificationHistory from '../screens/Admin/NotificationHistory';
 import RolesPermissions from '../screens/Admin/RolesPermissions';
 import LocationSetup from '../screens/Admin/LocationSetup';
 import Settings from '../screens/Admin/Settings';
+import CategoryForm from '../screens/Admin/CategoryForm';
+import AddWorkerScreen from '../screens/Admin/AddWorkerScreen';
+
 
 import { createSharedElementStackNavigator } from 'react-navigation-shared-element';
 const Stack = createSharedElementStackNavigator();
@@ -26,7 +31,9 @@ const AdminStackNavigation = () => {
         {/* Auth navigation  */}
         <Stack.Screen name="SplashScreen" component={SplashScreen} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="LoginScreen" component={LoginScreen} options={{ headerShown: false, animation: 'fade' }} />
+        <Stack.Screen name="OTPVerificationScreen" component={OtpVerificationScreen} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="AdminBottomTabNavigator" component={AdminBottomTabNavigator} options={{ headerShown: false, animation: 'fade' }} />
+        <Stack.Screen name="WorkerBottomTabNavigator" component={WorkerBottomTabNavigator} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="ProviderDetails" component={ProviderDetails} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="ServiceDetails" component={ServiceDetails} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="BookingDetails" component={BookingDetails} options={{ headerShown: false, animation: 'fade' }} />
@@ -38,17 +45,11 @@ const AdminStackNavigation = () => {
         <Stack.Screen name="RolesPermissions" component={RolesPermissions} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="LocationSetup" component={LocationSetup} options={{ headerShown: false, animation: 'fade' }} />
         <Stack.Screen name="Settings" component={Settings} options={{ headerShown: false, animation: 'fade' }} />
+        <Stack.Screen name="CategoryForm" component={CategoryForm} options={{ headerShown: false, animation: 'fade' }} />
+        <Stack.Screen name="AddWorkerScreen" component={AddWorkerScreen} options={{ headerShown: false, animation: 'fade' }} />
+
+
         
-
-
-
-
-
-
-
-
-
-
 
      </Stack.Navigator>
     );

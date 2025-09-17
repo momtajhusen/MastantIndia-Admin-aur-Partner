@@ -6,7 +6,9 @@
     "orientation": "portrait",
     "icon": "./src/assets/images/Applogo.png",
     "runtimeVersion": "1.0.0",
-    "android": {},
+    "android": {
+      "package": "com.codeprou.MastantIndiaAdmin"
+    },
     "ios": {},
     "extra": {
       "eas": {
